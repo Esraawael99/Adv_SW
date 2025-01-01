@@ -14,7 +14,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    docker.build('sort-array-image', '.')
+                    bat 'docker build -t my-image .'
                 }
             }
         }
