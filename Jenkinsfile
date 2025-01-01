@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/Esraawael99/Adv_SW.git'
+                git branch: 'main', url: 'https://github.com/Esraawael99/Adv_SW.git'
             }
         }
         stage('Build Docker Image') {
